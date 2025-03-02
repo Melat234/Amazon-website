@@ -1,10 +1,13 @@
 {
+  "homepage": "https://melat234.github.io/Amazon-website",
   "name": "amazon-clone",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -15,8 +18,11 @@
     "@mui/material": "^6.4.4",
     "@react-icons/all-files": "^4.1.0",
     "axios": "^1.7.9",
+    "gh-pages": "^6.3.0",
     "git": "^0.1.5",
+    "github": "^14.0.0",
     "numeral": "^2.0.6",
+    "page": "^1.11.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.4.0",
